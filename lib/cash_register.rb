@@ -6,15 +6,8 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0
     @discount = discount
-    # binding.pry
     @items = []
   end
-
-  # def total(total)
-  #   new_total = total.each { |t| t += 1 }
-  #   new_total
-  # end
-  # binding.pry
 
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
